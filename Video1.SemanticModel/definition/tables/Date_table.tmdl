@@ -1,11 +1,6 @@
 table Date_table
 	lineageTag: 694902aa-3914-47e9-9181-424dbeeec93d
 
-	measure test_measure = SUM(Orders[Profit])
-		lineageTag: 0c39ed61-d43e-415e-b004-23c1baf9111d
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column Date
 		dataType: dateTime
 		formatString: Long Date
