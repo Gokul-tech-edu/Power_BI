@@ -1,0 +1,35 @@
+table People
+	lineageTag: 0b16459e-4ece-453f-8331-b11cecba9c60
+
+	column Person
+		dataType: string
+		lineageTag: e4d0d6c0-66f0-4835-b047-e2835375cb30
+		summarizeBy: none
+		sourceColumn: Person
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 69a0d43b-d45d-4100-a572-3830389ab839
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition People = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Hp\Desktop\youtube contents\POWER BI Class 1\Dataset\Sample - Superstore.xls"), null, true),
+				    People1 = Source{[Name="People"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(People1,{{"Column1", type text}, {"Column2", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"Person", type text}, {"Region", type text}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

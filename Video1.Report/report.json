@@ -1,0 +1,69 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"type\":2,\"version\":\"5.56\"}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Date",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b2606d73b398b2c29095",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2337a18c11440745027d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":475.6231003039514,\"y\":142.00607902735564,\"z\":1000,\"width\":93.37386018237082,\"height\":352.09726443769,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Orders.Ship Date\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Orders\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Ship Date\"},\"Name\":\"Orders.Ship Date\",\"NativeReferenceName\":\"Ship Date\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 352.10,
+          "width": 93.37,
+          "x": 475.62,
+          "y": 142.01,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"61593516b2b20dda4b3b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.65957446808511,\"y\":351.1246200607903,\"z\":3000,\"width\":302.4924012158055,\"height\":149.7872340425532,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Date_table.test_measure\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date_table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"test_measure\"},\"Name\":\"Date_table.test_measure\",\"NativeReferenceName\":\"test_measure\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 149.79,
+          "width": 302.49,
+          "x": 47.66,
+          "y": 351.12,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"7f475630a3605e0be804\",\"layouts\":[{\"id\":0,\"position\":{\"x\":117.68996960486322,\"y\":114.77203647416414,\"z\":0,\"width\":302.4924012158055,\"height\":424.0729483282675,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Orders.Ship Mode\"},{\"queryRef\":\"Sum(Orders.Profit)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"o\",\"Entity\":\"Orders\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Ship Mode\"},\"Name\":\"Orders.Ship Mode\",\"NativeReferenceName\":\"Ship Mode\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"Profit\"}},\"Function\":0},\"Name\":\"Sum(Orders.Profit)\",\"NativeReferenceName\":\"Sum of Profit\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 424.07,
+          "width": 302.49,
+          "x": 117.69,
+          "y": 114.77,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"d1d86c2a7401233ed860\",\"layouts\":[{\"id\":0,\"position\":{\"x\":650.6990881458967,\"y\":142.00607902735564,\"z\":2000,\"width\":263.58662613981767,\"height\":546.6261398176292,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Date_table.Week\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date_table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Week\"},\"Name\":\"Date_table.Week\",\"NativeReferenceName\":\"Week\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 546.63,
+          "width": 263.59,
+          "x": 650.70,
+          "y": 142.01,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

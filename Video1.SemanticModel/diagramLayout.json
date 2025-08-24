@@ -1,0 +1,73 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 174
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 285,
+            "y": 735.125
+          },
+          "nodeIndex": "Orders",
+          "nodeLineageTag": "df7b95b9-6ea5-4ff1-8a61-a0cd20267a02",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 577.125
+          },
+          "nodeIndex": "People",
+          "nodeLineageTag": "0b16459e-4ece-453f-8331-b11cecba9c60",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 587.125
+          },
+          "nodeIndex": "Returns",
+          "nodeLineageTag": "d36df17b-0acb-4fb9-bce2-21dbdd1e0ce3",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 842,
+            "y": 345.375
+          },
+          "nodeIndex": "Date_table",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
